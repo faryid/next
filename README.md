@@ -38,3 +38,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+## Footnote
+
+```javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export", // Enables static exports
+  basePath: "/your-repo-name", // Replace with your repository name
+  assetPrefix: "/your-repo-name/", // Replace with your repository name
+  images: {
+    unoptimized: true, // Disables image optimization not supported by static export
+  },
+};
+
+module.exports = nextConfig;
+```
+
+> Note: The output: "export" option replaces the deprecated next export command in newer Next.js versions. 
