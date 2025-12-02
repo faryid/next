@@ -30,7 +30,7 @@ export default function Home() {
             To get started, edit the index.tsx file.
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            <span className="hidden sm:block">Looking for a starting point or more instructions?</span> Head over to{" "}
+            <span className="hidden sm:inline">Looking for a starting point or more instructions?</span> Head over to{" "}
             <a
               href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
               className="font-medium text-zinc-950 dark:text-zinc-50"
